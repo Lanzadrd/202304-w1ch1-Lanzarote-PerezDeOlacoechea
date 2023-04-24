@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="calculadora">
+    <div id="pantalla">
+      <label id="number">0</label>
+      <label id="sub-number">0</label>
+    </div>
+    <div id="botones">
+      <div onclick="resetAllValues()" class="button">AC</div>
+      <div onclick="resetValue()" class="button">DEL</div>
+      <div onclick="changeValue()" class="button">-/+</div>
+      <div onclick="division()" class="button">/</div>
+      <div onclick="updateNumber(this)" id="7" class="button">7</div>
+      <div onclick="updateNumber(this)" id="8" class="button">8</div>
+      <div onclick="updateNumber(this)" id="9" class="button">9</div>
+      <div onclick="multiplication()" id="x" class="button">x</div>
+      <div onclick="updateNumber(this)" id="4" class="button">4</div>
+      <div onclick="updateNumber(this)" id="5" class="button">5</div>
+      <div onclick="updateNumber(this)" id="6" class="button">6</div>
+      <div onclick="resta()" id="-" class="button">-</div>
+      <div onclick="updateNumber(this)" id="1" class="button">1</div>
+      <div onclick="updateNumber(this)" id="2" class="button">2</div>
+      <div onclick="updateNumber(this)" id="3" class="button">3</div>
+      <div onclick="sumar()" id="+" class="button">+</div>
+      <div onclick="updateNumber(this)" id="0" class="button">0</div>
+      <div onclick="decimal()" id="," class="button">,</div>
+      <div onclick="result()" id="=" class="button">=</div>
+    </div>
+  </div>
+  <script src="./main.js" rel="script"></script>
+</body>
+
+</html>
